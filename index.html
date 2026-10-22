@@ -22,47 +22,12 @@
     })();
   </script>
 
+  <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link href="/css/telegraf.css" rel="stylesheet" media="screen">
   <link href="/css/pricing.css" rel="stylesheet" media="screen">
   <link href="/css/theme-toggle.css" rel="stylesheet" media="screen">
   <link href="/css/subpage.css" rel="stylesheet" media="screen">
   <style>
-    @font-face {
-      font-family: 'Caveat';
-      font-style: normal;
-      font-weight: 700;
-      font-display: block;
-      src: url(data:font/woff2;base64,d09GMgABAAAAACFYABAAAAAAOMgAACD5AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGiIbg24ciXIGYD9TVEFUKgCBBBEICtgQvnYLVgABNgIkA4EoBCAFg2YHIAwHG7wqI5LTXg9k6khd+PPn3w+eL/++zu3+1MCINjJiENE6nJpoqcoFRPCAb9f9f6lqGDvbyKQPMJAoR34Ji2wprRSFaaVgruBu/1OAgQTaAgiQoA2t1C0lkkuN0iHhcNl379flD/zcen/764ABDjaiB4PRulEhITCklRSLEg6TKXIK2gsiZTDKwwIxGsEKEDPumos2fpz7tP8dkBpqZCGJpGlfc5C+5iDDNsMD6jB/ACDMhAZ2U3fpMH+Yjlien/ATVk+5+fm9bMovxdq55dHMjizYxYB59kQAH+XuCo2gwG15seAnDql9HQ+5VKP69h86lsCciUvmEUj8TYPf0GZPXTQP13VwOKMNhQuhQqmPDUqTrJF54uI/HXzjLatYwiwmMJ6RDM4pSAs6jx0nbrz4CBIiQpSYEnEY+2p4HB7lN3/uP00RM3+IMxaKoGnJyZKa2kMiYt75+69vNy04TAtOY+EyLXiMhddY+JJxfmMRgCBExsVMC/GQAImQMi7NtJABmaYsY5FrLPJNS0fVvzG5CfHtLtRkqI4QijQJMS1i0GDHusu5yCmqAFk6nlIJngqehlMo4oHylEFiFcKj+bRxxLCjUeMTBMqDUx2hiPf3mRYi5g/Z2Q/0mMkT5yy5dz9r6EvqKWMCuIoH4seNZ0D/PINMssgmh1zyyKdABjI9vL0DJy7iSSCRJJJJIZU00lHMJHJuSz383rm2bBv6vD6mm/U6PU0P17U6Wf1X79R1dUxNUsNVo8pWHumSl3Je9slGmSXDpVjiBb7xmNPsYSOzGI7GQQcddNBBh0QQKdePfOLmp8cBKiPg3WjnJLa/RrD2yj1iF/hbVL4Ft7KxHtsPIVzeK3fRHPBjqDwGTg8wdvsyhKa9cgfvA74GlWvArhSF9iSm7ZXbhscYXTkacw9ZfgqAIopIsXyIiPJa1tFkH+QGcYPGzEewYbhYdxnUL8poFF++HoX/K5XkGgGfODXg9sI+wf0F34dtCz4Oexa0B+YtaCt2+IXLgD4t9OUZhPARIY4ASyGi0okxGxJVAcndurB0JWh2Xy4ZKL6anwBhLPnKJftzyV1dMs2LOwOcEEjD9JBTtBM7h59UqH7tFJ/hgZ8Jwh1arc97If16EBq8xWm79eJfTyl9x6HvNy0Xfdome9PDq+iOy9ujJ7XztX9qR71NbVPvXjQ/9mjrDY/cf1M19Vbt/c2r/8+2bv4eXVGQaM34z5uerWgrNZsCPRAu9AFt00cvvfz+TaAqSvJNKbuP+qOU2CwdH6e9ncamdnKR/7faVu0C7QbtFu0u7X7tGe0F7RXtTe39Xo/kFEJ4Cd59s9/1/tf7prfUm+tN9bq9di/uBb0dhKc/8pCiXk87KS3fDg8WrtrrxHVNO+kfu5f/ln6ll0D6NXgDvGTHJzxafOQh1o7bvP6XxkP3wjnEfPy++KXhRz77yTnzklPOO/nGU18on/bwlS88fnHfzfqDA8+apz50+XX33kxuOvUp8sCWU264sv7+I5+d9PGJzz32/GuPffzZ8w9/dvzDo3zPN/3uzkGaDwrlE7V/ON2/snJFlK9vcZrZ6hDMGS4nIk2JrwwO5eDHkdVsACRiEnvZDp3Nf1uLloiIisLRrOUyBDg4cmC0s1HamV/g53lpOq9F+UXh0W3M0ax4xnA7BrdnyhDHZjfbKrPM9MbCWvTtD8PptF+eOWTw8Vp0+GAl3DVmetmIXFsrL2RvQMvg4yU/z+u+rxAAYAomyCGZmQAYYgyxRBDHeGFmOx+nZ/p5PkEUx5BlI1m2GgPmnX7uKqJSIgQRaUmk06U8J0IRlRYboc52DYDnYS/LmlJngghB1P48r6f5sJj9uo9l2YBsNk3P06CpebHBR8Gucq7OUdNE5HleSvO6cAvcJfX59csW19dNufrjWjk4UgbbGPKyZ2Cuumfj/s7U6WdccdXY3m3tn9YrTMpHo29r0Q8raT91O8bcXGBactKcnJTPwKGN70/fmV+gpvP9w2JlZYmIqMLabZ3VRBTpoAvpYQqIAQbpSY3NVFvuoO8bfA7D2o9Dq1l2Hmvr4S3zS8MibPdZcYwBdCtYmBnl32wM0vwCP58uTec1MX+4Eh7VnV2aEweG26nyuRkM3a7ZzbZKzzOb60eviJZWhtNpt2zPVblfiw4frITrA5CNyNW1SxeyNyivdjYG3TzPSxM5gu6InMTQHVn9caHa2t3v+oZQhCqiJnwDJI6zB2VmyslJLGE775REmhKhCJ8+RwgiBBGKCEGEICJNS0IRqohIEiLCtsY8D8tm0/Q8xJiukyQlVBChDLF///6URIf72JjpZTpIbEnMHJxlO3TBsCUlBhi1uME7JZVfoBQSggjXUHl+jlCIc4O7REQkmq+EszpjxXBxUW//fYvleWY3exAAWe32YlsXjPWBxACBMbdxNec2Bm5wjkFKzJomgMHtx6IffikJRYQwqCDCrfJWy7DnMEgTJAYvyzzNYjoVeuWZuWOX8/Fxlwhq8Dyvp3me16JIDxf72juaJgCGOYO7iCrij1dbP46sZudOZiZzCsypMEbEfERoRERUixo6lRhkXIYAx9kz0GoZNkeiSDkRCvEAwwIGwHFW5XsMzhHfmZeUP53foNKENJIEreRXRI3ZStjWmYUhNvZkd8Ly8jJezQbAG3N0Z35ppSaWlkiSCEGUQoIbdmuuhagi9PBFjUWNOd5Ilr1ht/rdjXxQUIMLIlRRMH4M4twQvo9od9Kc/HHZhC6GoDwzdYbKS8pXiEoMXvLqk6Y36Xmm9DBIHAdVPj6o0pI/PZi0+LxoRRx4G4B4BXRglRAxu405mIJGk1eSnqNZgKmFmcSyOaYLVUKapMMqffk7pPuHkyTUWdspgKVTwED5sbLZbJrgeWO642AIRm0X0YLtkgaiwqAiRRUeSJOS8BGlqIHEY3/1lLye+EQhahegY/DqhydLBCHRmNVn17ewsR2mXF1dKNg2soIgwDZggD62q11sMD1sGzQiiVuRMt2KYzyzsXG+q7ANJkChbdZLzUIbg1JisGIteMy5Yj55T7tIkpIQHLlup4oQnwsabbUmB7rdOm8h6hrcz89p7pCLIhFJkpBoVmfttn7Vud6OPhbqjGlWjGeOnc3HDQCcZXWWDC+tDJ/j8oK9vDoivefi7Nh2PuVUX/sSEVXCRZ05WGaXBjMXt2Sf41TCKPEzmyiytm7FCw+JJEG05eSNErOwMRoc287dcQNDKgPTnZBE6aA/YSVDWAziMsxUecc1eD6o9v9QE/OVMNzGvtaZhyE2ZWZuzbJHoygZTvx+znEQD0lTjtWDwtQuJWKiJCxE+dOD09OK0KjI2lMHhqkODIDO27FISNkcjZz+KCo22t7iUy0PDxRFiBjTmcTBTLU1XvL9gr2wtjYEcT1ojKXC4Mo4Pe0TSsSizqTJVeyTB0jszTzGXZeI8Wlc1B1vSM4812r1c7ZLihqrra0NxXFhPbZjUKVCIeug/BIXpFgUs3q7OQJSo8q95tISEUvFRtjWLdBgzDIp04GV0tGb4topKb8kpvNpIho680ZASiKSpY/lQqKDOmOowZAVYwjwwtpIcEw8qbHHEozOdYgQsxc1oogIp+Ve4Nzo7CGUInsc0TQlycq3NdHQBe2nebJAQbNwMGNwblCOqEBCKUR5wZ7xJLJANXcC0Fm7srjo6O1uGQ4cGuWdjuRb8PGJkpguXXAx54gmRdaIzBUN2K9onj9Tx6YML4naOhSCmQLYvTQYeKaXDUinwubLYLCwKeahhawOrRaiBdoxvEKS57+w5NNYe5fOHMeUniYZEaFjQhwU7E6nv/9KaIMS9ShJS4ki3DXs5SF1s6TULMZG7Z8RfYMwmgHYw681S2LvxzJAwZ4zDCzh5uiMFRuCRAkhRiSIKIq2Zpw2AFyEQgEW6g1BkomOzGUHsWkKUWwwNgpz1U7HJcrM3EiUlJTyS0rRAoUABwcM3mELpc7MUagrVn6osQaioc527eqTXYMHJrOk5zHssR6WXTNeeJRFtagD8WSYwV3T8qXxsnwumNuN6KjIrQo24Hi529WswGjtHvTz/AJ/OiWuNzBPeyMMdeZ4IzIbgGbT0yxDQK/AjGFgpjNrwPOKNCJJiHapUevDttftfacvlewTEz4Rs33M8Qa8Zp/nPRb+3Dou4n5KGqHOxrzn7M5uRCcGvaHGC3Zchh6Vy8vjRbNbHUQnXFGkmoE77ymRELUk8Z8JRQ1RP9Mspi8YD2macszRLDnsmQZ3x4eF7/tE8aktUs5EOY5uNJ9YbLR1ZwzDQpW7Bo1jHGfnSm/UPrYbUVHUym02IvSFaeF/88BKM+I8dP26feMoT3fY9WHzUC0aUneVcdzZGtp5umbezHSKfpC0DtEcbugz8vUaRKP3BkXHjwtaj454U7NO2+Sg1SK6RoHBxGvFX2YkNxw7ZgRtU5uwraudpzslMPW2C5vGj6m1g4P8lp7Z2fs+BoOO535dm82atVwtRaPlNrXxmnudDSbQ6CiNPNVAo+UaG5yG5DukkTZ4aMfUjaahITMyDLWa6/VSbf/w8KLCoB57IGlt4esHBaodauA19oJuSGTYLTGZeG57dXvbQJQ41sfXa4VaHU+nszedW1yamoTa/n6ucVJtME0nIX/WcGh/fxNP25tinHTf/hpfLbOXpzMJDJ0iQc+sKIShp2nX6skN/XNYC6KZdR+6PRvS2k+Y6dpNKtFquYaNs/Wodme9FrhaLQhtMc/0dHrz7ALTiMig5zeMS5uMep6WUpvneJ7QYt7Sye9sIetPTwf29yeqb5A/CIe0zooMR48KDMw26A2CRgOi6R0Ab2g5JNS2DR8SNumch26fsp3mgrHa2qRDf5u6oQ9xTR0tAsOIL//MVoGh9yDUHpp2aWrKaDj5DaIZGkIae3nNZ6C2X62Nv55brTYYBI2NPN1UtW0O2jahpgXugnO3zSBpFoJRZpsE2uHhcXLDSXN9B8Ih7bTD6RvqhmWAFHV6fNH69UNSDKPeRdg0LDSMCAxD9qZTtoaBdmHfsa8xh/VL+/uF2uG2mcevdtN3Gng6SqNJYGrlU/quneV3zDobhgQwdMpeYKA06Hg6im7gILdpmGvQ87ljkvSOvf2Y1GjsvvxQe8K796CZrpmrA0Q3PC6laI0pk0fmtU5oUiOameEg97cOCTStFmkZk/aN8fUj9oZGk32EKKRnakZErSOCoeM8na7ZJfX3c5u0ZE+UaeDpmpu4DUZpqIt2xq01NSENoAu4Uqe9/4RmnUBnohiSm4bVDScHkT1kOzp73Xmo00k/NsYN3TpfbzgVcOrUZFTKrs8Imgay/piRqzUayUxDzhqmpnijNy11Tf0Oi4T/tWc0gqa3l9d7l9c8Pe1rnBZuOU+wqHxNGA2i3Qi6ofKlTfMqjrhyRqKe0WZ4KF1Guw5PVe8qPQxtRagXPfZv9vAr31Ki07WqsEv8nFCCyuJvoxUv3DL4+sjTWpws1UMRUJO+Tf6KuOzH7yq9Ex9ztgJ2Y/RBbPLPP19Z4/20prppzQ7S9CMuvXpD9fB0/LNfoMO1xyKaQeNvcbhkGTUv+P1b5QLSmTh6hN7RZmCUyjhl1nCpcqLPts29oGDX3jN22R8KGcFUldDG8HFSF2sxn1UEzFrC7os4Z+LR907pZIbXZivV3rdBdQ1lqQw44C6/t2Mlh5EkKrPZwYraPBIJiISDwMqudS9In+zjHpSMcP3nnU2zvwe8xT9/dL45dXvOf38uM4oV+trRwXN9iW2YW1a2Q4xPQaDbDtbLxUvMeCWbrlZIwnPwYWG968/+Nea8UJ49nD+seDJBITaeHHZKYqxfN389O4ERss89VNwnUXeu+1MqWxhSKUtd6hiG+eWq2oJGDeepH4ln/y1c8rX57gyxYresHDoD/Nyop1Y8x/vIooKESnG8ZfgSgkRtFew3w2oRGjOsvl9KHPvfOQQNHaq80P3tYOPDK7+79DD2y3auKCpXrTqhjloVqfpzJu3obyNp3Mdh3meSYwe+1C/J//Fm7YeDZrQv2y/V7HcPwX7JHbrWpwI/z7lepcCt+jhtC0M1bqfq4N+qn4guv7yPe2eugogLLxovxadViYP0JeAI3BqJdFd9No6fi1MP9D4LeBzJ7XvnX5P9wn0Tbg2W47fovc6023lE68/C0WMSZQiKdpY+hVNeD+n8EJwDfYXFKcu4X8Yu+il3jY341mmxVXdrubiM+6eDvdJmUP7H8TtTvbulOdOypo2uSlYwUlidZWbmGbZQZlvK/Qe3W1g9UdLCUy6Nt4hc8u5Ih0e5mg4jUhgksMlx7gI0nBxDDQuf4MYT0otCJy54tQUul+CU7Elff3MbgZkCh8bQbPbVcKNmpHjXbLt4W4vggaXFS5aN/bH5c8y+EgWBhO1pxXohUkfUa0Og8FS077DCM0sekH9QX3nYD3rV4X524oSf9pPNSeZuvJo14tBk4NBwhBG+Rycu3Tv5AbEDSQ+fKshKmLspSbpGiqL5hhLI+SEOVBGjAPnqD42MICC+fclerIF6Ma7JtG0dJtwsjcneDkhaYggf4yNKss0kRJaCpDp8bUmLlKFfcYs7R9Av2kJEpr0lske2As87fz5Pywix5UQCMeqj80TepbkNQD1uveY257+b4XFtDeP0e6XfVUs1trzhoQjh4xH70xIv3KjFlTrOxzWPgxuWRxIX8uO27tzqEHmZSa9V1gUv6K/AfuEpecpnKOaqEuTMdEBDu/dHKg6NrsB4MbDzOTFOZZahDgtyotMilA34Q696Pv5D6gxYlHP2sCy693gugEPAs+qihL/fTC5YtjNHmOpnAajonKv8jz1z9teSgX257hT+meMliPEPf10mUKZPHVIK4KScnTJfiFI4G0ggzIg5C8rTz76zTNz70PRbuFntXYtHETdJVb64sKjMz1rnCGzC5efJKBOgONkhL9gpH2OW7hhI9Vpk33Mygdz/w6KaiLMlnmVjmV4YX6RL3HfezVCYvmyRfLG9WlYLuP17Cb9JK7HYr7Ion1/ZzVhmYj64OX3l1wg9oYST1ZWwkJBu52ImRK1QR6x5tDdpfiGK0nhx5+oBmIf//p0sOuc/edLws7WXGw+PqHxZAjLAk9icWUmU7dCo9R8XqnR/R3I+7/AOWX166dx4Z8+RtP/ep9/HoL5+/DGuvQOKWQLcLNvYVVyWHVaQ5c1OZqH+3sgMSf0z3+b0t7lgjYJN3LoFVigqLAA86jBsacW2iSz690LJtFmF+V/9aUnLwSY/kVNfqvg0bhmOB9QazF0tGuSyIqGLr6U0sSDFkepAJVkxJZgNByHLAb2M4jBEyyoMDW+Pxcag6G47abUfhqaan4DBE4GIlQOAeV6DPRbMwi2Cyf+Hl1MBwdQJThSVI9i50iMAo466i/gw11837EYXLWWXziMQMICQ19ckEMpsF1OZMWwyBp0tDtTjsYIu1o8IUAjUBf3nOVHOqqTkQvwrKr+CQMWBfqVFHUoR4LA+eIRu5rcNxcX1D6YXEkVd+rrTkJu3qWy3qyVdVS9WA3zY2xchO7uTdOYiXgLruD4jKForD/s8L8Sm+l85mopu4kQ8/U4Xd+Gjjaq3SYlMXR+NptwtfUQRonuxoxu8z6Net1LCI/KduMW5d7ZYjMYt0n8i0mS3zl5+CFLOnWBUz28TJmS5ZKkiVkxPlC2V1Xxpp8W7Re3F36+ufENlXePmKd5X/vBDcMheXJe3IzGQLr63tDeNQLmdX5aY+oet1xpLmJk6eSPb+/ObZdb+R8d4dtk7vLra8qmYJ8Y/651r5fisJy2pr1NnoTd7FSnkwvij+WEVa7mIuexGWtyq8rYdfuFxouhNn4TJAbEOsbLJJhJhVsj494LNQ783re0SaLDNpea3lvGt4mc6RF1n7Yt/yviUkdEsIK4i3eloOfq7VZql+i1q8vFZCbgUe3QBIYz59FPFcZMrsCPELH3IVp9FZOq+rrZgC2KjuYbYEwbBX3uoP+k2Rfi7XKIH8CnUej7d/uxpKGRWr7byIUZisYscVrO5Y1jq3FFRZ7Wfycco8hkO5PpnRGy7md5j6kNYLW92sUtkx7s7Nxfx3jyGk4LEW/ULMDIqhoqz6puIgujj6jhKhchQ5MBhRg2VKVZFBr1ZPTDqjfjIECS/0KAyu7X6exz8n1AZar7huImJkm9uFqAWOAbV1QPYGECBH1caS+2HKvP6MIlzy3IRSRDS1jHgXN2/fmPM9wnK9I8BfyZVhnuU5GcTTIDigDAwd95nJuXCb0Wf1ofuXYWFpOJzRdCEs/zZmdcsjqQkSpJUihCvfSj36tbEAAWKAGGMySX0PLM+4PzhnrSycmNNJhXjRwAljvyjy7z6RQZviETRVHj6LgGHDybiGIomhQRFm+/e9yauIpBYNEfXu0J625BWmAuD0K2PdcSEgSd9sSxeUTCwdkkjSrRElaK9Yo8qfvS65Ss0neFH67+u/7GGtbM0uvZP7wcTOqb9v3YVTOJ5YllZsY/816OP2LEFNrWqrn33jWt1deYQIQ2g7vn1+mIKnKaV7ZFicThI2LIz9DnDOlweUpn57JWZdkNCppNSYK/K57BvT4429WkyDZ8ZlATLxFTZzXpp5E1sKqmx/D7+hwX+D3PpS1Z7jR5gS4bX4/Guv8MVls9IsNQ8xSUxc0ibT6FenCi0tyMros/HXK94TeRRHlVFLY3CU4URXpfJ+C4ZZ+mkB4Z4zFqOu3uAjidtmxQnWSONJKLikNUc6V1e6cwZdhJKOdjcPcEUI6SMRjh1oetxdl8QnhiGfG0oXFLq0XZrzW7d6vBgHAKz29+Or3/7ThRPEtwXfFJ6rECxr6KCj2hyaQApxonpDAQnKi11UUlKI9Cqb6pw2PU92YFr7xRPSDLse6qu31yrHgljbZcsqvdUbRTg/3kwZZujFn4EI6Px/fdOFLfyRIduFB2w2brrRxyN8aTP6SepGymKn+p2MZvCDf1rCiUul2Y1oLhlCwUrLf71+mymOrpw7rUBT5hb62NVVFPSv5rI0dXbpCEhPl/qJESIGbvYTiFNoYCgGMN7GAShjZzgOs/zycfT2Kz292rb7eOmLnJQ6aJOz9zKXOUrDCkG/xI1vdv4YhgOYBlH2EJG34ClPYrBYIhGmnVBgadO0/txjQmDGayjk96Joni+QbGF0jocWVjzi5NhHOPxi9P+Qx+SQ1QAANgPBHLaZyJWzg6bEDCfbdiIJuGJf8BRrlhiy5JPY4lRsz9esmOuukM+yLY06rVv7qbkNWTgDTtu/DdGpvzhs6fuYJuvMfEqDgtFzahtxL7xj3ABJ479j0sqIihn8/9LeSxCazLqKMEs+j6xyp2HsDcXPC5jEfErFTk+WW9b2AweivHAEb7nPGu5Qqcbl7NqM6Qxsih4h7t/9MdzLagltXFEi3PZ/zJYxgG0XMqZ6dZ4RrduTVJ4ET07wwsoPzOiNoKMeah7317BYqz5AhGJ5bEZY33tsnJJzsLt24I/WrXkXjxy4jF0sI7c3+DsdWNeqHvwqNuHY8c+3L/2zcYNNl/Nl9eggFcUFM5fY0oxHSNCMopjqyN+xkFhlbnP99/fDoq6ONgilxSgKB7Q02bkRfhdM1tT5d2Fy852+x+2Hzs3VfOKjIZBH3G1ZcRyq8oBSRKKrxQv/eCBklAFaX/nk/e9qqk/Spnrhq7UCVY6yrveXfR8nZS3w5nszln+2Nq65KPCKO2jfbQb/F73Yq/Hd28iPC74M1jVUtPSzYUXPTjd8H5CuH0FZvsT37ytZrbowML9M4XNa897uXRz0/IwidZJo0mTirJLh1Hyx4Ft5TwKY17sW5sZpTkP7Q7BWkxu6uEy+1SsBBkmMekbFWrGRcJRfCQXi8P4O8Zj5OZhckee2mVxYjUvDN9L6wmOj33JrV11wUzpwfFmLz6zEq7jpXU/75wRYVaQKlfjut/MV/o6ElH2E54I3fdsyn67MLotUOYRYP+PNdmRuFCC7gHMUBc+9iviSLxO8dqNU2zIiTrDGEY0E4MBQY5WQYmBy6t+SIDNYrQV0Bg0765/euy2lL+wqKTvyjmFOcFXHOfz4/v1G6m4vRycOQlDTMnr9+Tzk8FgjT6XF3laiM0SrEIcksLXhmIIzNo8Oa08oOZdArJrI8Z34MZM7+VlqZZ8P6liXxn2PNX7MolOY44HlnFc8CiCDqS+uAkaOiFPYL8qvzQrJTSzeHvmsoWd7Bdo9THDaZvPZ4P1I79uv5kbSJFs2VNwMS8/UJOv2/eAVrEhN9tsLiTqFUzivTWr4XnLlJAqPr9kyoD0+cncSgVhy7b+lYtI/vnv18Mk5KgsCX+3HyztTv/GHA32ABxH4U4y53RdXEsNdO/IUqTjyFzLQVwuJ5TFwiAblSdHkVcX4HwAGNVJbnlga0Or5+VCRHN/GOfpPAeM4cVVjlYuexkydoYvO8/YfEAiXq8WioDJOsrkELHf1X1WdHMq+al091If1EyWa/1WG07+ainu+9xQZIWWhZ9amfADoPiYNcElII9REHfGImYyJQt9bxH7zxz8DmavT1AYHkn8MPSyzQD34pWcyDu1TZOpnRz008eH+iu7vj5jqdXcQwHBqngfMMi2rVjV1Foup/Y34/3C/EPTldWuWUEeu40l+U+aMWCTH3oV2p9zI72U0nMJVACAIxa/YIY+11UrcxiBfxKx2G+fan+wOPC3S9OT4pmALw2fL6NvsVEYIV6OvYBFH9w3Gvul4VM0+vav/b+pEybjywXkGRQhP0MR5hFIMWKIRn6AIuR/qMI8gijkN0hEfoA05H+IwjyCQOQ3UCFnIQZZCJnICghCHkE6TEAach0WI8WwGMmGNCQG8pEWSEUWghpZAUHIbVgLE7ACuQ7rkWKoQrIhDomBZUgPpCILYQGyAvyQ25ALExCDXIcipBhykGwoR2KgELkIe+A3AEAULUJSgYDgYgtOOmLxEAkZNl63oaRi9AGYxFgccRIYmyOOYBIWXKB+Egp8KJ2EA3NInYQHPigVHbyianxESFQkA3s7UsdbpEVQDJWnu1dCKfiDe/60CsiDclgGpVAJFeCGj1kGK8ANVkM5FIE7xEM4xEIILIEqKChKV4IrBMNqWAH5kAoFUC6dtRpWgRg8wQ1k6Ul71eIT6nhAkS6GJAi7Pu3bNuydVMNDclUKNaoyPZBuMBl4gBeIIRmK80uJaeMEKE/TEiiAvPtKBWv0R914xarFoStERaGKYFltvAaW7qV5sBpWCuLVsHo/XQEFUKgrdtWV7pBHRI7xL351rS+j4AlH+jjyZeshdCcAAA==) format("woff2");
-    }
-    :root {
-      --tl-bg: #ffffff;
-      --tl-fg: #333333;
-      --tl-muted: #8c8c8c;
-      --tl-accent: #179cde;
-    }
-    html.tl-dark {
-      --tl-bg: #12181f;
-      --tl-fg: #dbe1e8;
-      --tl-muted: #87919e;
-      --tl-accent: #3aa3e8;
-    }
-    .tl-skin-light {
-      --tl-bg: #ffffff; --tl-fg: #333333; --tl-muted: #8c8c8c; --tl-accent: #179cde;
-    }
-    html { background: var(--tl-bg); }
-    body {
-      background: var(--tl-bg);
-      color: var(--tl-fg);
-    }
-    .tl_page_footer { color: var(--tl-muted); }
-    .tl_page_footer_link { color: var(--tl-muted); }
-    .tl_page_footer_org { color: var(--tl-muted); }
-    .tl_page_footer_org a.tl_page_footer_link { color: inherit; }
-    .tl_page_footer_org a.tl_page_footer_link:hover {
-      color: var(--tl-accent);
-      text-decoration: none;
-    }
-
     .tl_main_page_container {
       flex: 1 0 auto;
       margin-top: 0;
@@ -97,6 +62,8 @@
     }
     .tl_frame {
       --tl-frame: min(180px, 42vw, max(120px, calc((100svh - var(--tl-peek) - 104px) / 1.1)));
+      position: relative;
+      z-index: 2;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -114,6 +81,7 @@
       line-height: 1;
       letter-spacing: -0.03em;
       text-align: left;
+      transition: opacity .3s ease;
     }
     .tl_frame_word {
       align-self: flex-end;
@@ -146,11 +114,6 @@
     .tl_reel.tl_ready > b {
       transition: transform .6s cubic-bezier(.65, 0, .35, 1), opacity .6s ease, color .2s ease;
     }
-    .tl_frame {
-      position: relative;
-      z-index: 2;
-      transition: opacity .3s ease;
-    }
     .tl_frame > span {
       position: relative;
       z-index: 1;
@@ -158,31 +121,6 @@
     .tl-js:not(.tl-preview) .tl_frame { opacity: 0; pointer-events: none; }
     .tl-preview .tl_frame { cursor: pointer; }
     .tl-preview .tl_reel > b { pointer-events: auto; }
-    .tl_sr_only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      white-space: nowrap;
-    }
-
-    .tl_pricing_note {
-      display: inline-block;
-      margin-left: 8px;
-      vertical-align: baseline;
-      transform-origin: 0 80%;
-      color: var(--tl-fg);
-      font-family: "Caveat", cursive;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.05;
-      transform: rotate(-4deg);
-    }
-    .tl_pricing_note .tl_note_caps { font-size: 0.78em; }
-    @media (max-width: 480px) {
-      .tl_pricing_note { font-size: 18px; }
-    }
 
     #harga .tl_pricing_title,
     #harga .tl_pricing_lead,
@@ -201,6 +139,8 @@
       right: 0;
       bottom: 0;
       z-index: 3;
+      height: min(calc(var(--tl-peek) - 1px), calc(100vh - 360px));
+      height: min(calc(var(--tl-peek) - 1px), calc(100svh - 360px));
       cursor: pointer;
       opacity: 0;
       visibility: hidden;
@@ -211,10 +151,6 @@
       visibility: visible;
       transition: opacity .3s ease;
     }
-    .tl_veil {
-      height: min(calc(var(--tl-peek) - 1px), calc(100vh - 360px));
-      height: min(calc(var(--tl-peek) - 1px), calc(100svh - 360px));
-    }
     @media (max-width: 767px) {
       .tl_veil { height: min(calc(var(--tl-peek) - 1px), calc(100svh - 300px)); }
     }
@@ -222,10 +158,8 @@
       position: absolute;
       inset: 0;
     }
-    .tl_veil { --tl-footer-band: 110px; }
     .tl_veil_fade {
-      background: linear-gradient(to bottom, transparent 20%,
-        var(--tl-bg) calc(100% - var(--tl-footer-band)));
+      background: linear-gradient(to bottom, transparent 20%, var(--tl-bg) calc(100% - 110px));
     }
     .tl_veil .tl_page_footer {
       position: absolute;
@@ -240,7 +174,6 @@
 </head>
 
 <body>
-  <div id="fb-root"></div>
   <button id="theme-toggle" class="tl-theme-toggle" aria-label="Toggle day/night theme">
     <span class="tl-ic tl-ic-sun">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -250,24 +183,12 @@
     </span>
   </button>
   <div class="tl_page_wrap">
-    <div class="tl_page_head navbar navbar-static-top navbar navbar-tg" style="visibility:hidden;">
-      <div class="navbar-inner">
-        <div class="container clearfix">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li class=""><a href="/apps">Apps</a></li>
-            <li class="hidden-xs "><a href="https://github.com/TelegrafApp" target="_blank">Github</a></li>
-            <li><a href="https://wa.me/6281298219323" target="_blank">Business</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <div class="container clearfix tl_page_container tl_main_page_container">
       <div class="tl_page">
         <div class="tl_main_wrap">
           <div class="tl_hero">
             <h1 class="tl_frame">
-              <span>Enterprise</span><span class="tl_sr_only"> Platform</span>
+              <span>Enterprise</span><span class="tl_sr"> Platform</span>
               <span class="tl_frame_word" aria-hidden="true">CRM</span>
             </h1>
           </div>
@@ -282,17 +203,29 @@
 
             <div class="tl_plans">
               <div class="tl_plan">
-                <h3 class="tl_plan_name">Gratis<span class="tl_pricing_note"> hingga 3 agen <span class="tl_note_caps">CRM</span></span></h3>
+                <h3 class="tl_plan_name">Gratis</h3>
                 <p class="tl_plan_desc">Untuk tim kecil yang baru mulai.</p>
-                <p class="tl_plan_price">Rp0 <span class="tl_plan_period">/ bulan</span></p>
-                <p class="tl_plan_note">Gratis selamanya</p>
+                <div class="tl_plan_pricing">
+                  <p class="tl_plan_note">Gratis selamanya</p>
+                  <p class="tl_plan_price">Rp0 <span class="tl_plan_period">/ bulan</span></p>
+                </div>
                 <a href="https://web.telegraf.chat" target="_blank" rel="noopener" class="tl_plan_cta">Mulai gratis</a>
-                <p class="tl_plan_features_head">Yang Anda dapatkan:</p>
                 <ul class="tl_plan_features">
-                  <li>Obrolan tanpa batas</li>
-                  <li>Riwayat pesan tanpa batas</li>
-                  <li>Grup dan pesan langsung</li>
-                  <li>Aplikasi web dan Android</li>
+                  <li><span>Obrolan tanpa batas</span></li>
+                  <li><span>Riwayat pesan tanpa batas</span></li>
+                  <li><span>Grup dan pesan langsung</span></li>
+                  <li><span>Hingga 3 agen</span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Kotak masuk omnichannel terpadu</span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Distribusi percakapan otomatis ke agen</span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Laporan dan analitik tim</span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Dukungan prioritas</span></li>
+                  <li><span>Tanpa biaya tambahan atau add-on</span></li>
+                  <li class="tl_sec tl_no"><span><svg class="tl_sec_icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3l1.9 5.6L17.5 10.5l-5.6 1.9L10 18l-1.9-5.6L2.5 10.5l5.6-1.9zM18 14l.9 2.6 2.6.9-2.6.9L18 21l-.9-2.6-2.6-.9 2.6-.9z"/></svg>AI</span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Telegraf<sup class="tl_pow">2</sup></span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Tim frontline</span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Single sign-on (SAML)<span class="tl_fn_mark">*</span></span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Manajemen pengguna SCIM<span class="tl_fn_mark">*</span></span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Dukungan integrasi EMM<span class="tl_fn_mark">*</span></span></li>
                 </ul>
               </div>
 
@@ -300,24 +233,62 @@
                 <span class="tl_plan_badge">Semua fitur</span>
                 <h3 class="tl_plan_name">Premium</h3>
                 <p class="tl_plan_desc">Untuk tim yang melayani pelanggan setiap hari.</p>
-                <p class="tl_plan_price">Rp2.499.000 <span class="tl_plan_period">/ bulan</span></p>
-                <p class="tl_plan_note">Harga flat untuk seluruh tim</p>
+                <div class="tl_plan_pricing">
+                  <p class="tl_plan_note">Harga flat untuk seluruh tim</p>
+                  <p class="tl_plan_price">Rp2.499.000 <span class="tl_plan_period">/ bulan</span></p>
+                </div>
                 <a href="https://wa.me/6281298219323?text=Halo%2C%20saya%20ingin%20berlangganan%20Telegraf%20Premium."
                   target="_blank" rel="noopener" class="tl_plan_cta tl_plan_cta_primary">Berlangganan Premium</a>
-                <p class="tl_plan_features_head">Semua di Gratis, dan:</p>
                 <ul class="tl_plan_features">
-                  <li>Agen tanpa batas</li>
-                  <li>Kotak masuk omnichannel terpadu<span class="tl_fn_mark">*</span></li>
-                  <li>Distribusi percakapan otomatis ke agen</li>
-                  <li>Laporan dan analitik tim</li>
-                  <li>Dukungan prioritas</li>
-                  <li>Tanpa biaya tambahan atau add-on</li>
-                  <li>Telegraf<sup class="tl_pow">2</sup> <span class="tl_soon">Segera hadir</span></li>
+                  <li><span>Obrolan tanpa batas</span></li>
+                  <li><span>Riwayat pesan tanpa batas</span></li>
+                  <li><span>Grup dan pesan langsung</span></li>
+                  <li><span>Agen tanpa batas</span></li>
+                  <li><span>Kotak masuk omnichannel terpadu</span></li>
+                  <li><span>Distribusi percakapan otomatis ke agen</span></li>
+                  <li><span>Laporan dan analitik tim</span></li>
+                  <li><span>Dukungan prioritas</span></li>
+                  <li><span>Tanpa biaya tambahan atau add-on</span></li>
+                  <li class="tl_sec tl_hl"><span><svg class="tl_sec_icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3l1.9 5.6L17.5 10.5l-5.6 1.9L10 18l-1.9-5.6L2.5 10.5l5.6-1.9zM18 14l.9 2.6 2.6.9-2.6.9L18 21l-.9-2.6-2.6-.9 2.6-.9z"/></svg>AI</span></li>
+                  <li class="tl_hl"><span>Telegraf<sup class="tl_pow">2</sup> <span class="tl_soon">Segera hadir</span></span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Tim frontline</span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Single sign-on (SAML)<span class="tl_fn_mark">*</span></span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Manajemen pengguna SCIM<span class="tl_fn_mark">*</span></span></li>
+                  <li class="tl_no"><span><span class="tl_sr">Tidak termasuk: </span>Dukungan integrasi EMM<span class="tl_fn_mark">*</span></span></li>
+                </ul>
+              </div>
+
+              <div class="tl_plan">
+                <h3 class="tl_plan_name">Premium+</h3>
+                <p class="tl_plan_desc">Untuk perusahaan dengan kebutuhan skala lanjutan.</p>
+                <div class="tl_plan_pricing">
+                  <p class="tl_plan_contact">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 14.14A6 6 0 1 1 20.2 11.5Q20.5 13.6 21.6 15.3Q19 15.1 17.05 14.14Z"/><path class="tl_icon_front" d="M6.85 20.42A6.3 6.3 0 1 0 3.08 16.65Q2.9 18.9 2.2 21.4Q5 21.4 6.85 20.42Z"/></svg>
+                    Hubungi kami untuk harga
+                  </p>
+                </div>
+                <a href="https://wa.me/6281298219323?text=Halo%2C%20saya%20ingin%20mengetahui%20harga%20Telegraf%20Premium%2B."
+                  target="_blank" rel="noopener" class="tl_plan_cta">Hubungi kami</a>
+                <ul class="tl_plan_features">
+                  <li><span>Obrolan tanpa batas</span></li>
+                  <li><span>Riwayat pesan tanpa batas</span></li>
+                  <li><span>Grup dan pesan langsung</span></li>
+                  <li><span>Agen tanpa batas</span></li>
+                  <li><span>Kotak masuk omnichannel terpadu</span></li>
+                  <li><span>Distribusi percakapan otomatis ke agen</span></li>
+                  <li><span>Laporan dan analitik tim</span></li>
+                  <li><span>Dukungan prioritas</span></li>
+                  <li><span>Tanpa biaya tambahan atau add-on</span></li>
+                  <li class="tl_sec tl_hl"><span><svg class="tl_sec_icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3l1.9 5.6L17.5 10.5l-5.6 1.9L10 18l-1.9-5.6L2.5 10.5l5.6-1.9zM18 14l.9 2.6 2.6.9-2.6.9L18 21l-.9-2.6-2.6-.9 2.6-.9z"/></svg>AI</span></li>
+                  <li class="tl_hl"><span>Telegraf<sup class="tl_pow">2</sup> <span class="tl_soon">Segera hadir</span></span></li>
+                  <li><span>Tim frontline</span></li>
+                  <li><span>Single sign-on (SAML)<span class="tl_fn_mark">*</span></span></li>
+                  <li><span>Manajemen pengguna SCIM<span class="tl_fn_mark">*</span></span></li>
+                  <li><span>Dukungan integrasi EMM<span class="tl_fn_mark">*</span></span></li>
                 </ul>
               </div>
             </div>
-            <p class="tl_plans_footnote"><span class="tl_fn_mark" aria-hidden="true">*</span>Integrasi saluran lain dan fitur baru akan hadir secara
-              bertahap. Pelanggan Premium tidak dikenakan biaya tambahan.</p>
+            <p class="tl_plans_footnote"><span class="tl_fn_mark" aria-hidden="true">*</span>Sesuai permintaan.</p>
 
             <h2 class="tl_pricing_heading">Pertanyaan yang sering diajukan</h2>
             <div class="tl_faq">
